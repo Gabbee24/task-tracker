@@ -1,0 +1,10 @@
+:root{
+    --color-header:  rgb(82, 51, 51);
+
+}
+
+label{
+    color: var(--color-header);
+    font-size: large;
+    font-weight: 500;
+}
