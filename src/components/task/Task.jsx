@@ -1,14 +1,11 @@
 import React from 'react';
 import './Task.css';
-import tasks from './tasks.json';
 import {FaTimes} from 'react-icons/fa'
 
-const Task = () => {
-
-    const [trackerTask, setTrackerTask] = React.useState(tasks)
+const Task = ({trackerTask, setTrackerTask}) => {
 
     const deleteTask = (id) => {
-        setTrackerTask(trackerTask.filter((taskk) => taskk.id !== id))
+        setTrackerTask(trackerTask.filter((task) => task.id !== id))
     }
 
     const toggleReminder = (id) => {
@@ -34,7 +31,7 @@ const Task = () => {
                 </h4>
                 <p>{task.day}</p>
             </div>
-        ))}
+        ))} 
     </>
   )
 }

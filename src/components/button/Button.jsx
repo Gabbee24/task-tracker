@@ -1,10 +1,14 @@
+import './Button.css';
 
-const Button = ({color,text}) => {
+const Button = ({color,text, buttonClass, toggleBtnAdd}) => {
   return (
     <button 
-        className="btn"
+        className={`btn ${buttonClass}`}
         style={{backgroundColor: color}}    
-    >{text}</button>
+        onClick={toggleBtnAdd}
+    >
+        {text}
+    </button>
   )
 }
 

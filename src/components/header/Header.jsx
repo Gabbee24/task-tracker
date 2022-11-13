@@ -1,13 +1,16 @@
+import React from "react";
 import Button from "../button/Button"
 import './Header.css'
 
-const Header = () => {
+const Header = ({btnAdd, setBtnAdd, toggleBtnAdd}) => {
+
   return (
     <header className='header'>
         <h1>Task Tracker</h1>
         <Button
-            color='green'
-            text='Add'
+            toggleBtnAdd = {toggleBtnAdd}
+            color={btnAdd ? 'red' : 'green'}
+            text={btnAdd ? 'Close Tab' : 'Open Tab'}
         />
     </header>
   )
