@@ -12,6 +12,8 @@ const AddTask = ({trackerTask, setTrackerTask, btnAdd ,setBtnAdd ,toggleBtnAdd})
 
     const {text, day, reminder} = task;
 
+    console.log(task);
+
     //funvtion for handling the form for adding task
     function handleTask(e) {
        const {name , value, type, checked} = e.target
