@@ -5,6 +5,7 @@ import './App.css';
 import Header from './components/header/Header';
 import Task from './components/task/Task';
 import AddTask from './components/addTask/AddTask';
+import Footer from './components/footer/Footer';
 
 import tasks from './components/task/tasks.json';
 
@@ -35,6 +36,8 @@ function App() {
         trackerTask = {trackerTask}
         setTrackerTask = {setTrackerTask}
       /> : <i>There are no task on the reminder board</i>}
+      
+      <Footer/>
     </div>
   );
 }
